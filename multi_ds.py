@@ -27,14 +27,14 @@ class Ds:
             self.hash[last_value] = value_position
             print("Deleted")
 
-    def find(self, value):
+    def search(self, value):
 
         if value in self.hash:
             print(value, " is found at position ", self.hash[value], " at 2nd associative array")
         else:
             print("Not found")
 
-    def random(self):
+    def getRandom(self):
         n = len(self.dict)
         if n > 0:
             k = random.randint(0, n-1)
@@ -53,14 +53,14 @@ ds.insert("mango")
 ds.insert("rambuttan")
 ds.insert("apple")
 ds.show_all()
-ds.find("mango")
-ds.random()
-ds.random()
-ds.random()
-ds.random()
-ds.random()
-ds.random()
-ds.random()
+ds.search("mango")
+ds.getRandom()
+ds.getRandom()
+ds.getRandom()
+ds.getRandom()
+ds.getRandom()
+ds.getRandom()
+ds.getRandom()
 ds.show_all()
 ds.delete("mango")
 ds.show_all()
